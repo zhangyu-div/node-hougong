@@ -1,0 +1,163 @@
+.navbar{
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+#container{
+    height: 100%;
+    display: flex;
+}
+
+.slider{
+    width: 190px;
+    height: 100%;
+    flex-shrink: 0;
+    background: #f9f9f9;
+    border-right:1px solid #e5e5e5;
+}
+.slider ul li{
+    line-height: 44px;
+    width: 190px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    font-size:14px;
+}
+.slider ul .active{
+    background: #fff;
+    color: #333;
+}
+.content{
+    flex: 1;
+}
+
+
+
+/* addbooks */
+.addBooks{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+.addBooks form{
+    width: 400px;
+}
+#booksLogo{
+    opacity: 0;
+}
+.upload{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    _width: 72px;
+}
+.upload div{
+    width: 100%;
+    height: 130px;
+    border:1px dashed #ccc;
+    position: absolute;
+    text-align: center;
+    line-height: 96px;
+    font-size: 14px;
+}
+/* booksList */
+
+.booksList{
+    padding: 20px;
+}
+.booksList th{
+    text-align: center;
+}
+.booksList td{
+    line-height: 137px !important;
+    text-align: center;
+}
+.booksList img{
+    width:90px;
+    height: 120px;
+}
+/* home */
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#echarts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#topone{
+    width: 300px;
+    height: 300px;
+}
+#toptwo{
+    width: 300px;
+    height: 300px;
+}
+#topthree{
+    width: 300px;
+    height: 300px;
+}
+#topfour{
+    width: 300px;
+    height: 300px;
+}
+#topfive{
+    width: 100%;
+    height: 500px;
+}
+
+.article div{
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #333;
+    background: #ccc;
+    border-bottom: 1px sandybrown solid;
+    position: relative;
+
+}
+.title{
+    cursor: pointer;
+}
+.articledel{
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
+}
+.user img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.user{
+    font-size: 16px;
+}
+.usertr th{
+    width: 100px;
+    background: gold;
+    text-align: center;
+}
+.usertr tr{
+    line-height: 60px;
+}
+.usertr td{
+    width: 100px;
+    text-align: center;
+    background: red;
+}
+.time{
+    width: 300px;
+}
+.table .usertr td{
+    line-height:100px;
+} 
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 800px;
+            min-height: 600px;
+            border: 1px dashed grey;
+            margin:20px auto;;
+        }
+        h2{
+            text-align: center;
+        }
+        .content{
+            text-indent: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2></h2>
+        <div class="content">
+            
+        </div>
+    </div>
+</body>
+<script src="../js/lib/jquery-1.11.3.js"></script>
+<script>
+    let id=location.href.split("?")[1].split("=")[1];
+    console.log(id); 
+    $.ajax({
+        type:"get",
+        url:"/article/content",
+        data:{ 
+            id
+        },
+        success:function(data){  
+            $("#container h2").html(data.data.data.title)
+            console.log(data)
+            $("#container .content").html(data.data.data.content)
+        }
+    })
+
+</script>
+</html>
