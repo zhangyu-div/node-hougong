@@ -32,7 +32,8 @@ class Register{
                 username,
                 password
             },
-            success:this.handleFormSubmitSucc.bind(this)
+        }).then((res)=>{
+           alert(res.data.in)
         })
     }
     handleFormSubmitSucc(data){

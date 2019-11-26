@@ -36,7 +36,7 @@ class Login{
         })
     }
     handleFormSubmitSucc(data){
-        console.log("fhsdla")
+        console.log("fhsdla");
         if(data.data.status == 1){
             alert(data.data.info);
             window.location.href="http://localhost:3000/html/list.html";
